@@ -1,0 +1,44 @@
+{
+  "name": "bundleFab",
+  "description": "Bundle de test",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Fabien",
+      "email": "fabien.codes@gmail.com"
+    }
+  ],
+  "require": {
+    "symfony/console": "^4.4",
+    "symfony/http-kernel": "^4.4",
+    "symfony/dependency-injection": "^4.4",
+    "php": "^7.4",
+    "symfony/config": "^4.4",
+    "symfony/validator": "^4.4",
+    "twig/twig": "^3.0",
+    "symfony/framework-bundle": "^4.4",
+    "symfony/dotenv": "^4.4",
+    "symfony/yaml": "^4.4",
+    "symfony/twig-bundle": "^4.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "BundleFab\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "BundleFab\\Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "symfony/phpunit-bridge": "^5.1",
+    "friendsofphp/php-cs-fixer": "^2.15",
+    "phpstan/phpstan": "^0.12.14",
+    "phpstan/phpstan-doctrine": "^0.12.10"
+  },
+  "scripts": {
+    "fix": "php-cs-fixer fix",
+    "stan": "phpstan analyse --memory-limit=-1"
+  }
+}
